@@ -21,9 +21,9 @@ function wpdocs_register_my_custom_menu_page() {
         __( 'Help Videos', 'textdomain' ),
         'custom menu',
         'manage_options',
-        'myplugin/myplugin-admin.php',
+        'dashboard_help_videos/videos.php',
         '',
-        plugins_url( 'myplugin/images/icon.png' ),
+        plugins_url( 'dashboard_help_videos/images/icon.png' ),
         3
     );
 }
