@@ -11,11 +11,6 @@ GitHub Plugin URI: https://github.com/ripencreative/
 GitHub Branch: master
 */
 
-
-define( 'PLUGIN_DIR', dirname(__FILE__).'/' );
-
-include "menu/dashboard.php";
-
 // Load Custom Stylesheet
 
 // wp_register_style() example
