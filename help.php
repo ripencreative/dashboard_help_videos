@@ -11,7 +11,20 @@ GitHub Plugin URI: https://github.com/ripencreative/
 GitHub Branch: master
 */
 
-// Add Help menu item to the WordPress Dashboard
+
+define( 'PLUGIN_DIR', dirname(__FILE__).'/' );
+
+include "menu/dashboard.php";
+
+// Load Custom Stylesheet
+
+// wp_register_style() example
+define( 'WPDHV_CSS_PATH' , str_replace( site_url().'/', '', plugin_dir_url( __FILE__ ) ).'css/' );
+add_action( 'admin_enqueue_scripts', 'wpdhv_add_link_tag_to_head' );
+
+function wpdhv_add_link_tag_to_head() {
+    wp_enqueue_style( 'wpdhv-style', '/'.WPDHV_CSS_PATH.'style.css', array(), null, 'all' );
+}
 
 /**
  * Register a custom menu page.
@@ -19,7 +32,7 @@ GitHub Branch: master
 function wpdocs_register_my_custom_menu_page() {
     add_menu_page(
         __( 'Help Videos', 'textdomain' ),
-        'custom menu',
+        'Help Videos',
         'manage_options',
         'dashboard_help_videos/videos.php',
         '',

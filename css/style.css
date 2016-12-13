@@ -1,0 +1,35 @@
+/* Custom Styles for WordPress Dashboard Help Videos Plugin */
+
+#adminmenu .wp-menu-image img {
+    padding: 6px 0 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.video {
+    float: left;
+    width: 48%;
+    margin-left: 1%;
+    margin-bottom: 2em;
+}
+
+.allvideos {
+    margin-bottom: 2em;
+    clear: left;
+}
+
+.allvideos h2 {
+    text-align: left;
+}
+
+.logos {
+    width: 48%;
+    margin: 0 auto;
+    display: block;
+}
+
+#footer {
+    width: 100%;
+    clear: left;
+    text-align: center;
+}
