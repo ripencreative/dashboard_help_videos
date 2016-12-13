@@ -3,16 +3,44 @@
 Plugin Name: WordPress Dashboard Help Videos
 Plugin URI: https://github.com/ripencreative/
 Description: WordPress Help Videos for Dashboards
-Version: 0.1
+Version: 1.0
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
-GitHub Plugin URI: https://github.com/ripencreative/
+GitHub Plugin URI: https://github.com/ripencreative/dashboard_help_videos
 GitHub Branch: master
 */
 
-// Load Custom Stylesheet
+// Installing TGM Plugin Activation to require the GitHub Updater plugin to keep this plugin up to date.
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
+add_action( 'tgmpa_register', 'mytheme_require_plugins' );
+
+function mytheme_require_plugins() {
+
+    $plugins = array(
+    array(
+        'name'               => 'GitHub Plugin Updates',
+        'slug'               => 'github-updater',
+        'source'             => 'https://github.com/afragen/github-updater/archive/develop.zip',
+        'required'           => false, // this plugin is suggested
+        'external_url'       => 'https://github.com/afragen/github-updater/', // page of my plugin
+        'force_deactivation' => false, // do not deactivate this plugin when the user switches to another theme
+    )
+);
+    $config = array(
+    'menu'         => 'mytheme-install-required-plugins', // menu slug
+    'has_notices'  => true, // Show admin notices
+    'dismissable'  => false, // the notices are NOT dismissable
+    'dismiss_msg'  => 'If you would like to stay up to date with the latest videos available, please install this plugin', // this message will be output at top of nag
+    'is_automatic' => true, // automatically activate plugins after installation
+);
+
+    tgmpa( $plugins, $config );
+
+}
+
+// Load Custom Stylesheet
 // wp_register_style() example
 define( 'WPDHV_CSS_PATH' , str_replace( site_url().'/', '', plugin_dir_url( __FILE__ ) ).'css/' );
 add_action( 'admin_enqueue_scripts', 'wpdhv_add_link_tag_to_head' );
@@ -71,9 +99,9 @@ function organicweb_custom_feed_output() {
 echo '<div class="rss-widget">';
 wp_widget_rss_output(array(
 // CHANGE THE URL BELOW TO THAT OF YOUR FEED
-'url' => 'https://managewp.org/articles.rss',
+'url' => 'https://wpsitemaintain.ca/feed/',
 // CHANGE 'OrganicWeb News' BELOW TO THE NAME OF YOUR WIDGET
-'title' => 'WordPress News',
+'title' => 'From the WP Site Maintain Blog',
 // CHANGE '2' TO THE NUMBER OF FEED ITEMS YOU WANT SHOWING
 'items' => 3,
 // CHANGE TO '0' IF YOU ONLY WANT THE TITLE TO SHOW
