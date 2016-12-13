@@ -18,7 +18,7 @@
             <iframe width="560" height="315" src="https://videopress.com/embed/1UKXOM9q" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="560" height="315" src="https://videopress.com/embed/mAQazAM6" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://videopress.com/embed/duPLFt5X" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video">
             <iframe width="560" height="315" src="https://videopress.com/embed/VN5O01er" frameborder="0" allowfullscreen></iframe>
@@ -33,7 +33,7 @@
             <iframe width="560" height="315" src="https://videopress.com/embed/RfyxLxGh" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="560" height="315" src="https://videopress.com/embed/duPLFt5X" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://videopress.com/embed/mAQazAM6" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
