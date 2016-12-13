@@ -18,10 +18,11 @@
             <iframe width="560" height="315" src="https://videopress.com/embed/XO145v3h" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-</div>
-<span style="clear: left;"></span>
-<div id="footer">
-    <hr>
-    <p>This plugin is the creation of Brian Morris from <a href="https://ripencreative.ca" target="_blank">RIPEn Creative</a> and <a href="https://wpsitemaintain.ca" target="_blank">WP Site Maintain</a></p>
-    <p>If you have any questions or concerns with the plugin you can reach our team at <a href="mailto: support@wpsitemaintain.ca">support@wpsitemaintain.ca</a></p>
+    <span style="clear: left;"></span>
+    <div id="footer">
+        <hr>
+        <p>This plugin is the creation of Brian Morris from <a href="https://ripencreative.ca" target="_blank">RIPEn Creative</a> and <a href="https://wpsitemaintain.ca" target="_blank">WP Site Maintain</a></p>
+        <p>If you have any questions or concerns with the plugin you can reach our team at <a href="mailto: support@wpsitemaintain.ca">support@wpsitemaintain.ca</a></p>
+
+    </div>
 </div>
