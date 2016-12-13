@@ -37,6 +37,27 @@ function wpdocs_register_my_custom_menu_page() {
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
 
+// Dashboard Submenu
+function wpdocs_register_my_custom_submenu_dashboard() {
+    add_submenu_page('dashboard_help_videos/videos.php','Dashboard Menu', 'Dashboard Menu','manage_options', 'dashboard_help_videos', 'create_submenu_dashboard');
+}
+add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_dashboard' );
+
+// Posts Submenu
+function wpdocs_register_my_custom_submenu_posts() {
+    add_submenu_page('dashboard_help_videos/videos.php','Posts Menu', 'Posts Menu','manage_options', 'posts_help_videos', 'create_submenu_posts');
+}
+add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_posts' );
+
+// Include and display dashboard videos menu item
+function create_submenu_dashboard(){
+    include '../wp-content/plugins/dashboard_help_videos/menu/dashboard.php';
+}
+
+// Include and display posts videos menu item
+function create_submenu_posts(){
+    include '../wp-content/plugins/dashboard_help_videos/menu/posts.php';
+}
 
 // RSS Feed Widget for latest WordPress news
 
