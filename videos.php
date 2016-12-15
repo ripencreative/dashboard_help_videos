@@ -1,17 +1,17 @@
 <div class="wrap about-wrap">
-    <h1><?php _e( 'WordPress Dashboard Help Videos' ); ?></h1>
+    <h1>WordPress Dashboard Help Videos</h1>
 
     <div class="about-text">
-        <?php _e('The videos below will help you learn the basic functions of WordPress. Thanks to <a href="http://wordpress.tv" target="_blank">wordpress.tv</a> for the videos. Each heading is named after the menu name.' ); ?>
+        <p>The videos below will help you learn the basic functions of WordPress. Thanks to <a href="http://wordpress.tv" target="_blank">wordpress.tv</a> for the videos.</p>
     </div>
 
     <div class="allvideos">
         <h2>Menu Option</h2>
         <div class="video">
-            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=dashboard_help_videos"><img src="images/dashboard.jpg" title="Click to view dashboard help videos" /></a>
+            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=dashboard_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/dashboard.jpg" title="Click to view dashboard help videos" /></a>
         </div>
         <div class="video">
-            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=posts_help_videos"><img src="images/posts.jpg" title="Click to view posts help videos" /></a>
+            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=posts_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/posts.jpg" title="Click to view posts help videos" /></a>
         </div>
     </div>
 </div>
