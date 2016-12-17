@@ -2,7 +2,7 @@
     <h1>WordPress Posts Menu Help Videos</h1>
 
     <div class="about-text">
-        <p>The following videos are instructional for the Dashboard menu. Thanks again to <a href="http://wordpress.tv" target="_blank">wordpress.tv</a> for the videos.</p>
+        <p>The following videos are instructional for the Posts menu. Thanks again to <a href="http://wordpress.tv" target="_blank">wordpress.tv</a> for the videos.</p>
     </div>
 
     <div class="allvideos">
