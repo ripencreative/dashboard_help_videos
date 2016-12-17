@@ -70,12 +70,14 @@ add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
 // Dashboard Submenu
 function wpdocs_register_my_custom_submenu_dashboard() {
     add_submenu_page('dashboard_help_videos/videos.php','Dashboard Menu', 'Dashboard Menu','manage_options', 'dashboard_help_videos', 'create_submenu_dashboard');
+    add_submenu_page('index.php','Help Videos', 'Help Videos','manage_options', 'dashboard_help_videos', 'create_submenu_dashboard');
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_dashboard' );
 
 // Posts Submenu
 function wpdocs_register_my_custom_submenu_posts() {
     add_submenu_page('dashboard_help_videos/videos.php','Posts Menu', 'Posts Menu','manage_options', 'posts_help_videos', 'create_submenu_posts');
+    add_submenu_page('edit.php','Help Videos', 'Help Videos','manage_options', 'post_help_videos', 'create_submenu_posts');
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_posts' );
 
