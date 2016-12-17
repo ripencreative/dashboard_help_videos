@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: WordPress Dashboard Help Videos
+Plugin Name: WP Dashboard Help Videos
 Plugin URI: https://github.com/ripencreative/
-Description: WordPress Help Videos for Dashboards
+Description: WP Help Videos for Dashboards
 Version: 1.0
 License: GPL
 Author: Brian Morris
@@ -11,8 +11,10 @@ GitHub Plugin URI: https://github.com/ripencreative/dashboard_help_videos
 GitHub Branch: master
 */
 
+define( 'MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
 // Installing TGM Plugin Activation to require the GitHub Updater plugin to keep this plugin up to date.
-require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
+require_once( MY_PLUGIN_PATH . '/class-tgm-plugin-activation.php');
 
 add_action( 'tgmpa_register', 'mytheme_require_plugins' );
 
@@ -79,12 +81,12 @@ add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_posts' );
 
 // Include and display dashboard videos menu item
 function create_submenu_dashboard(){
-    include '../wp-content/plugins/dashboard_help_videos/menu/dashboard.php';
+    include( MY_PLUGIN_PATH . 'menu/dashboard.php');
 }
 
 // Include and display posts videos menu item
 function create_submenu_posts(){
-    include '../wp-content/plugins/dashboard_help_videos/menu/posts.php';
+    include( MY_PLUGIN_PATH . 'menu/posts.php');
 }
 
 // RSS Feed Widget for latest WordPress news

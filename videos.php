@@ -8,10 +8,10 @@
     <div class="allvideos">
         <h2>Menu Option</h2>
         <div class="video">
-            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=dashboard_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/dashboard.jpg" title="Click to view dashboard help videos" /></a>
+            <a href="../wp-admin/admin.php?page=dashboard_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/dashboard.jpg" title="Click to view dashboard help videos" /></a>
         </div>
         <div class="video">
-            <a href="https://ripen-creative.dev/wp-admin/admin.php?page=posts_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/posts.jpg" title="Click to view posts help videos" /></a>
+            <a href="../wp-admin/admin.php?page=posts_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/posts.jpg" title="Click to view posts help videos" /></a>
         </div>
     </div>
 </div>

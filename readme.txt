@@ -1,4 +1,4 @@
-=== WordPress Dashboard Help Videos ===
+=== WP Dashboard Help Videos ===
 Requires at least: 4.0
 Tested up to: 4.7
 Stable tag: 1.2.0
