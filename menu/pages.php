@@ -12,7 +12,7 @@
             <script src="https://videopress.com/videopress-iframe.js"></script>
         </div>
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1QdQ-QCio9A" frameborder="0" allowfullscreen></iframe>
+            <iframe width="540" height="295" src="https://www.youtube.com/embed/1QdQ-QCio9A" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <span style="clear: left;"></span>
