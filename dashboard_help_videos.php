@@ -84,7 +84,7 @@ add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_posts' );
 // Media Submenu
 function wpdocs_register_my_custom_submenu_media() {
     add_submenu_page('dashboard_help_videos/media.php','Media Menu', 'Media Menu','manage_options', 'media_help_videos', 'create_submenu_media');
-    add_submenu_page('upload.php','Media Videos', 'Media Videos','manage_options', 'media_help_videos', 'create_submenu_media');
+    add_submenu_page('upload.php','Help Videos', 'Help Videos','manage_options', 'media_help_videos', 'create_submenu_media');
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_media' );
 
