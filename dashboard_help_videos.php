@@ -3,7 +3,7 @@
 Plugin Name: WP Dashboard Help Videos
 Plugin URI: https://github.com/ripencreative/
 Description: WP Help Videos for Dashboards
-Version: 1.0
+Version: 1.3
 License: GPL
 Author: Brian Morris
 Author URI: https://ripencreative.ca
