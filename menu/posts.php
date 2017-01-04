@@ -35,6 +35,9 @@
         <div class="video">
             <iframe width="560" height="315" src="https://videopress.com/embed/mAQazAM6" frameborder="0" allowfullscreen></iframe>
         </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://videopress.com/embed/GKoEC54c" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 <span style="clear: left;"></span>

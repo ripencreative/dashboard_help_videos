@@ -81,6 +81,13 @@ function wpdocs_register_my_custom_submenu_posts() {
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_posts' );
 
+// Media Submenu
+function wpdocs_register_my_custom_submenu_media() {
+    add_submenu_page('dashboard_help_videos/media.php','Media Menu', 'Media Menu','manage_options', 'media_help_videos', 'create_submenu_media');
+    add_submenu_page('upload.php','Media Videos', 'Media Videos','manage_options', 'media_help_videos', 'create_submenu_media');
+}
+add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_media' );
+
 // Include and display dashboard videos menu item
 function create_submenu_dashboard(){
     include( MY_PLUGIN_PATH . 'menu/dashboard.php');
@@ -89,6 +96,11 @@ function create_submenu_dashboard(){
 // Include and display posts videos menu item
 function create_submenu_posts(){
     include( MY_PLUGIN_PATH . 'menu/posts.php');
+}
+
+// Include and display posts videos menu item
+function create_submenu_media(){
+    include( MY_PLUGIN_PATH . 'menu/media.php');
 }
 
 // RSS Feed Widget for latest WordPress news
