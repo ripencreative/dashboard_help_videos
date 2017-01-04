@@ -16,6 +16,9 @@
         <div class="video">
             <a href="../wp-admin/admin.php?page=media_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/media.jpg" title="Click to view media help videos" /></a>
         </div>
+        <div class="video">
+            <a href="../wp-admin/admin.php?page=pages_help_videos"><img src="<?php echo plugin_dir_url( __FILE__ ) ?>/images/pages.jpg" title="Click to view pages help videos" /></a>
+        </div>
     </div>
 </div>
 <span style="clear: left;"></span>

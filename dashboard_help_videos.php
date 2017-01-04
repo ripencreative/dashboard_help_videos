@@ -88,6 +88,12 @@ function wpdocs_register_my_custom_submenu_media() {
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_media' );
 
+function wpdocs_register_my_custom_submenu_pages() {
+    add_submenu_page('dashboard_help_videos/videos.php','Pages Menu', 'Pages Menu','manage_options', 'pages_help_videos', 'create_submenu_pages');
+    add_submenu_page('edit.php?post_type=page','Help Videos', 'Help Videos','manage_options', 'pages_help_videos', 'create_submenu_pages');
+}
+add_action( 'admin_menu', 'wpdocs_register_my_custom_submenu_pages' );
+
 // Include and display dashboard videos menu item
 function create_submenu_dashboard(){
     include( MY_PLUGIN_PATH . 'menu/dashboard.php');
@@ -101,6 +107,11 @@ function create_submenu_posts(){
 // Include and display posts videos menu item
 function create_submenu_media(){
     include( MY_PLUGIN_PATH . 'menu/media.php');
+}
+
+// Include and display posts videos menu item
+function create_submenu_pages(){
+    include( MY_PLUGIN_PATH . 'menu/pages.php');
 }
 
 // RSS Feed Widget for latest WordPress news
