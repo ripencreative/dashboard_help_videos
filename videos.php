@@ -24,7 +24,7 @@
 <span style="clear: left;"></span>
 <div id="footer">
     <hr>
-     <p>This plugin is the creation of Brian Morris from <a href="https://ripencreative.ca" target="_blank">RIPEn Creative</a> and <a href="https://wpsitemaintain.ca" target="_blank">WP Site Maintain</a></p>
-    <p>If you have any questions about the plugin, or need help with WordPress, you can reach our team at <a href="mailto: support@wpsitemaintain.ca">support@wpsitemaintain.ca</a></p>
+     <p>This plugin is the creation of Brian Morris from <a href="https://ripencreative.ca" target="_blank">RIPEn Creative</a></p>
+    <p>If you have any questions about the plugin, or need help with WordPress, you can reach our team at <a href="mailto: hello@ripencreative.ca">hello@ripencreative.ca</a></p>
 </div>
 
