@@ -2,7 +2,7 @@
 Contributors: ripencreative, wpsitemaintain
 Tags: help, videos, help-videos, dashboard-help, posts-help
 Requires at least: 3.8
-Tested up to: 4.7
+Tested up to: 4.9
 Stable tag: 1.3
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
