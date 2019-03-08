@@ -126,9 +126,9 @@ function organicweb_custom_feed_output() {
 echo '<div class="rss-widget">';
 wp_widget_rss_output(array(
 // CHANGE THE URL BELOW TO THAT OF YOUR FEED
-'url' => 'https://wpsitemaintain.ca/feed/',
+'url' => 'https://ripencreative.ca/feed/',
 // CHANGE 'OrganicWeb News' BELOW TO THE NAME OF YOUR WIDGET
-'title' => 'From the WP Site Maintain Blog',
+'title' => 'From the RIPEn Creative Blog',
 // CHANGE '2' TO THE NUMBER OF FEED ITEMS YOU WANT SHOWING
 'items' => 3,
 // CHANGE TO '0' IF YOU ONLY WANT THE TITLE TO SHOW
